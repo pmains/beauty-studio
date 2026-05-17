@@ -1,10 +1,10 @@
 ---
 title: "Uñas Esculpidas y Acrílicas en Piura"
 slug: "unas-esculpidas-piura"
-serviceCategory: "manicura-pedicura"
+serviceCategory: "con-extension"
 city: "Piura"
 description: "Uñas esculpidas, acrílicas y polygel en Piura. Extensiones de uñas personalizadas en largo y forma. Resultados duraderos y naturales. Reserva tu cita."
-priceRange: "S/70 – S/100"
+priceRange: "S/15 – S/90"
 faq:
   - q: "¿Cuánto duran las uñas esculpidas?"
     a: "Con cuidado adecuado, pueden durar de 3 a 4 semanas antes de necesitar un relleno o retoque."

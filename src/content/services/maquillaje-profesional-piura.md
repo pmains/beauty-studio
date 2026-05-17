@@ -4,7 +4,7 @@ slug: "maquillaje-profesional-piura"
 serviceCategory: "maquillaje"
 city: "Piura"
 description: "Maquillaje profesional en Piura para toda ocasión. Social, artístico, novias y quinceañeras. Productos de larga duración y atención personalizada."
-priceRange: "S/120 – S/250"
+priceRange: "S/100 – S/230"
 faq:
   - q: "¿Cuánto tiempo antes debo reservar para maquillaje de novia?"
     a: "Recomiendo reservar con al menos 2 semanas de anticipación para coordinar una prueba de maquillaje y definir el look."

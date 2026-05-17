@@ -1,10 +1,10 @@
 ---
 title: "Extensiones de Pestañas en Piura"
 slug: "extensiones-pestanas-piura"
-serviceCategory: "cejas-pestanas"
+serviceCategory: "pestanas"
 city: "Piura"
 description: "Extensiones de pestañas en Piura con aplicación profesional. Pestañas más largas, gruesas y voluminosas con resultado natural. Reserva por WhatsApp."
-priceRange: "S/60 – S/100"
+priceRange: "S/60 – S/80"
 faq:
   - q: "¿Cuánto duran las extensiones de pestañas?"
     a: "Duran entre 3 y 4 semanas, dependiendo del ciclo natural de crecimiento de tus pestañas y los cuidados posteriores."

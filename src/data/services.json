@@ -21,28 +21,56 @@
   },
   "categories": [
     {
-      "id": "manicura-pedicura",
-      "slug": "manicura-pedicura",
-      "name": "Manicura y Pedicura",
-      "shortName": "Uñas",
-      "title": "Manicura y Pedicura en Piura | Noemi Parrales Beauty Studio",
-      "description": "Uñas perfectas con técnicas profesionales: semipermanente, esculpidas, acrílicas, polygel, rubber gel y apres gel. Manicura rusa al seco con máxima higiene.",
-      "heroSubtitle": "Uñas perfectas para cada ocasión",
-      "heroText": "Trabajo con técnicas modernas como la manicura rusa al seco, utilizando herramientas desechables y productos de alta calidad para garantizar duración, higiene y un acabado impecable.",
-      "faq": [
-        { "q": "¿Cuánto dura el esmaltado semipermanente?", "a": "Entre 2 y 3 semanas, dependiendo del cuidado y el crecimiento de la uña." },
-        { "q": "¿La manicura rusa al seco es dolorosa?", "a": "No, es un técnica precisa y cuidadosa que respeta la cutícula sin causar molestias." },
-        { "q": "¿Puedo llevarme las uñas largas con acrílico o polygel?", "a": "Sí, ambas técnicas permiten extensiones de largo y forma personalizada." }
-      ],
+      "id": "una-natural",
+      "slug": "manicura",
+      "name": "Uña Natural",
+      "shortName": "Uña Natural",
+      "title": "Manicura en Uña Natural en Piura | Noemi Parrales Beauty Studio",
+      "description": "Manicura para uña natural en Piura: Masglo Gel Evolution, japonesa, semipermanente, builder gel, acrigel y polygel. Técnica rusa al seco.",
+      "heroSubtitle": "Uñas naturales, resultados espectaculares",
+      "heroText": "Cuido tus uñas naturales con técnicas profesionales que las fortalecen y embellecen sin dañarlas.",
       "services": [
-        { "name": "Manicura Semipermanente", "price": 40 },
-        { "name": "Pedicura Semipermanente", "price": 40 },
-        { "name": "Esculpidas", "price": 100 },
-        { "name": "Acrílicas", "price": 80 },
-        { "name": "Poly Gel", "price": 70 },
-        { "name": "Rubber Gel", "price": 70 },
-        { "name": "Apres Gel", "price": 50 },
-        { "name": "Retiro de Acrílicas, Esculpidas y Gel", "price": 25 }
+        { "name": "Masglo Gel Evolution sin lámpara", "price": 35 },
+        { "name": "Manicura Japonesa", "price": 40 },
+        { "name": "Esmaltado Semipermanente", "price": 40 },
+        { "name": "Builder Gel", "price": 50 },
+        { "name": "Acrigel (gel + acrílico + curado en lámpara)", "price": 40 },
+        { "name": "Baño en Polygel", "price": 50 }
+      ]
+    },
+    {
+      "id": "con-extension",
+      "slug": "unas-extension",
+      "name": "Con Extensión",
+      "shortName": "Extensiones",
+      "title": "Uñas con Extensión en Piura | Noemi Parrales Beauty Studio",
+      "description": "Extensiones de uñas en Piura: polygel, híbridas, builder gel, apres gel, acrigel. Resultados duraderos y personalizados.",
+      "heroSubtitle": "El largo y diseño que deseas",
+      "heroText": "Desde polygel hasta acrigel, trabajo cada extensión de forma individual para un resultado natural, cómodo y duradero.",
+      "services": [
+        { "name": "Polygel", "price": 70 },
+        { "name": "Híbridas (Polygel + Builder Gel)", "price": 80 },
+        { "name": "Full Builder Gel", "price": 90 },
+        { "name": "Builder Gel (Tip + Builder Gel)", "price": 60 },
+        { "name": "Apres Gel", "price": 60 },
+        { "name": "Acrigel (Tip + gel + acrílico + curado en lámpara)", "price": 60 },
+        { "name": "Retiro Acrílicas, Esculpidas y Gel", "price": 15 }
+      ]
+    },
+    {
+      "id": "pedicura",
+      "slug": "pedicura",
+      "name": "Pedicura",
+      "shortName": "Pedicura",
+      "title": "Pedicura en Piura | Noemi Parrales Beauty Studio",
+      "description": "Pedicura profesional en Piura: Masglo Gel Evolution, japonesa, semipermanente y builder gel. Higiene y cuidado con técnica rusa al seco.",
+      "heroSubtitle": "Pies perfectos, paso a paso",
+      "heroText": "Cuidado completo para tus pies con técnica rusa al seco, herramientas desechables e hidratación profunda.",
+      "services": [
+        { "name": "Masglo Gel Evolution sin lámpara", "price": 40 },
+        { "name": "Pedicura Japonesa", "price": 45 },
+        { "name": "Semipermanente", "price": 45 },
+        { "name": "Builder Gel", "price": 60 }
       ]
     },
     {
@@ -51,43 +79,44 @@
       "name": "Maquillaje",
       "shortName": "Maquillaje",
       "title": "Maquillaje Profesional en Piura | Noemi Parrales Beauty Studio",
-      "description": "Maquillaje social, artístico, para novias y quinceañeras en Piura. Looks duraderos y personalizados para cada ocasión.",
+      "description": "Maquillaje profesional en Piura para toda ocasión: social, artístico, novias y quinceañeras. Looks duraderos y personalizados.",
       "heroSubtitle": "Resalta tu belleza en cada ocasión",
       "heroText": "Ya sea para una reunión casual, una sesión de fotos, una boda o tus quince años, creo un look que realza tu estilo y personalidad con productos profesionales de larga duración.",
-      "faq": [
-        { "q": "¿Cuánto tiempo antes debo reservar para maquillaje de novia?", "a": "Recomiendo reservar con al menos 2 semanas de anticipación para coordinar una prueba de maquillaje." },
-        { "q": "¿Incluye pestañas el maquillaje?", "a": "El maquillaje social y artístico incluye aplicación de pestañas postizas. Para novias y quinceañeras se coordina según el look deseado." },
-        { "q": "¿Cuánto dura el maquillaje?", "a": "Con productos profesionales, el maquillaje dura entre 8 y 12 horas sin retoques." }
-      ],
       "services": [
-        { "name": "Maquillaje Social", "price": 120 },
-        { "name": "Maquillaje Artístico", "price": 150 },
-        { "name": "Novias y Quinceañeras", "price": 250 }
+        { "name": "Maquillaje Social", "price": 100 },
+        { "name": "Maquillaje Artístico", "price": 130 },
+        { "name": "Novias y Quinceañeras", "price": 230 }
       ]
     },
     {
-      "id": "cejas-pestanas",
-      "slug": "cejas-pestanas",
-      "name": "Cejas y Pestañas",
-      "shortName": "Cejas",
-      "title": "Cejas y Pestañas en Piura | Noemi Parrales Beauty Studio",
-      "description": "Diseño de cejas, pigmentación, lifting, y extensiones de pestañas en Piura. Resultados naturales que realzan tu mirada.",
-      "heroSubtitle": "Una mirada que habla por sí sola",
-      "heroText": "Tus cejas y pestañas son el marco de tu rostro. Trabajo con técnicas de diseño, pigmentación y lifting para lograr un resultado natural y favorecedor que realza tu mirada.",
-      "faq": [
-        { "q": "¿Duele el diseño de cejas con pigmento?", "a": "Es un procedimiento suave. Aplico anestesia tópica para minimizar cualquier molestia." },
-        { "q": "¿Cuánto dura el lifting de pestañas?", "a": "Entre 6 y 8 semanas, dependiendo del ciclo natural de crecimiento de tus pestañas." },
-        { "q": "¿Puedo maquillarme después del diseño de cejas?", "a": "Se recomienda esperar 24 horas antes de maquillar la zona para permitir que el pigmento se fije correctamente." },
-        { "q": "¿Cada cuánto debo retocar el diseño de cejas?", "a": "Recomiendo un retoque cada 4 a 6 semanas para mantener la forma y el color." }
-      ],
+      "id": "pestanas",
+      "slug": "pestanas",
+      "name": "Pestañas",
+      "shortName": "Pestañas",
+      "title": "Extensiones y Lifting de Pestañas en Piura | Noemi Parrales Beauty Studio",
+      "description": "Extensiones de pestañas y lifting en Piura. Pestañas más largas, curvadas y voluminosas con resultado natural.",
+      "heroSubtitle": "Una mirada que hipnotiza",
+      "heroText": "Realza tu mirada con extensiones de pestañas profesionales o lifting natural. Resultados espectaculares sin máscara.",
       "services": [
-        { "name": "Extensiones de Pestañas", "price": 100 },
-        { "name": "Lifting de Pestañas", "price": 60 },
-        { "name": "Lifting + Pigmento", "price": 70 },
-        { "name": "Diseño de Cejas", "price": 20 },
+        { "name": "Extensiones", "price": 80 },
+        { "name": "Lifting", "price": 60 },
+        { "name": "Lifting + Pigmento", "price": 70 }
+      ]
+    },
+    {
+      "id": "cejas",
+      "slug": "cejas",
+      "name": "Cejas",
+      "shortName": "Cejas",
+      "title": "Diseño de Cejas en Piura | Noemi Parrales Beauty Studio",
+      "description": "Diseño de cejas profesional en Piura: diseño, pigmentación y laminado. Resultados naturales que realzan tu mirada.",
+      "heroSubtitle": "El marco perfecto para tu rostro",
+      "heroText": "Tus cejas son el marco de tu rostro. Trabajo con técnicas de diseño, pigmentación y laminado para lograr una forma que favorezca tu rostro.",
+      "services": [
+        { "name": "Diseño", "price": 20 },
         { "name": "Diseño + Pigmento", "price": 30 },
-        { "name": "Diseño + Lifting", "price": 60 },
-        { "name": "Diseño + Pigmento + Lifting", "price": 80 }
+        { "name": "Diseño + Laminado", "price": 60 },
+        { "name": "Diseño + Pigmento + Laminado", "price": 80 }
       ]
     }
   ],
