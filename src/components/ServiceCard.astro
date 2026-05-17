@@ -1,0 +1,41 @@
+---
+export interface Props {
+  name: string;
+  price: number;
+}
+
+const { name, price } = Astro.props;
+---
+
+<div class="service-card">
+  <span class="service-card__name">{name}</span>
+  <span class="service-card__price">S/{price.toFixed(2)}</span>
+</div>
+
+<style>
+  .service-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.9rem 1.2rem;
+    border-bottom: 1px solid #eee;
+    gap: 1rem;
+  }
+
+  .service-card:last-child {
+    border-bottom: none;
+  }
+
+  .service-card__name {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #444;
+  }
+
+  .service-card__price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3d2b3d;
+    white-space: nowrap;
+  }
+</style>

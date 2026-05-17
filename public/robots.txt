@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noemiparralesbeautystudio.com/sitemap-index.xml

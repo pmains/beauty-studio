@@ -1,0 +1,76 @@
+{
+  "studio": {
+    "name": "Noemi Parrales Beauty Studio",
+    "location": "Piura, Perú",
+    "phone": "+51986448568",
+    "phoneDisplay": "+51 986 448 568",
+    "email": "noemi.parrales@hotmail.com",
+    "whatsappUrl": "https://wa.me/51986448568",
+    "whatsappMessage": "Hola Noemi, me gustaría reservar una cita. ¿Tienes disponibilidad?",
+    "facebook": "https://www.facebook.com/noemiparralesmakeupartist",
+    "instagram": "https://www.instagram.com/noemiparrales_beautystudio/",
+    "currency": "S/"
+  },
+  "categories": [
+    {
+      "id": "manicura",
+      "name": "Manicura",
+      "icon": "nails",
+      "services": [
+        { "name": "Manicura Semipermanente", "price": 40 },
+        { "name": "Pedicura Semipermanente", "price": 40 },
+        { "name": "Esculpidas", "price": 100 },
+        { "name": "Acrílicas", "price": 80 },
+        { "name": "Poly Gel", "price": 70 },
+        { "name": "Rubber Gel", "price": 70 },
+        { "name": "Apres Gel", "price": 50 },
+        { "name": "Retiro de Acrílicas, Esculpidas y Gel", "price": 25 }
+      ]
+    },
+    {
+      "id": "maquillaje",
+      "name": "Maquillaje",
+      "icon": "makeup",
+      "services": [
+        { "name": "Maquillaje Social", "price": 120 },
+        { "name": "Maquillaje Artístico", "price": 150 },
+        { "name": "Novias y Quinceañeras", "price": 250 }
+      ]
+    },
+    {
+      "id": "pestanas",
+      "name": "Pestañas",
+      "icon": "lashes",
+      "services": [
+        { "name": "Extensiones de Pestañas", "price": 100 },
+        { "name": "Lifting de Pestañas", "price": 60 },
+        { "name": "Lifting + Pigmento", "price": 70 }
+      ]
+    },
+    {
+      "id": "cejas",
+      "name": "Cejas",
+      "icon": "brows",
+      "services": [
+        { "name": "Diseño de Cejas", "price": 20 },
+        { "name": "Diseño + Pigmento", "price": 30 },
+        { "name": "Diseño + Lifting", "price": 60 },
+        { "name": "Diseño + Pigmento + Lifting", "price": 80 }
+      ]
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Atención Personalizada",
+      "description": "Me enfoco en tus necesidades individuales para brindarte el mejor servicio y resultados excepcionales."
+    },
+    {
+      "title": "Técnica Rusa al Seco",
+      "description": "Limpieza precisa con herramientas desechables para máxima higiene y cuidado."
+    },
+    {
+      "title": "Productos Profesionales",
+      "description": "Trabajo con marcas de alta calidad para garantizar duración y acabado perfecto."
+    }
+  ]
+}

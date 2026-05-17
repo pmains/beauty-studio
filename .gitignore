@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Astro generated
+.astro
+
+# OpenClaw workspace
+.openclaw
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+USER.md
+SOUL.md
+TOOLS.md
+NOTES.md
+*.md~

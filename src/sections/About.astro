@@ -1,0 +1,112 @@
+---
+import studio from '@/data/services.json';
+---
+
+<section class="about" id="acerca">
+  <div class="about__container">
+    <h2 class="about__heading">Acerca de Mí</h2>
+    <div class="about__content">
+      <div class="about__photo">
+        <img
+          src="/images/noemi-retrato.jpg"
+          alt="Noemi Parrales — especialista en belleza en Piura"
+          class="about__photo-img"
+          width="250"
+          height="250"
+        />
+      </div>
+      <div class="about__text">
+        <p>
+          Soy Noemi Parrales, especialista en belleza con experiencia en manicura, pedicura,
+          maquillaje profesional y diseño de cejas. He trabajado en Barcelona y ahora ofrezco
+          mis servicios en Piura, Perú.
+        </p>
+        <p>
+          Mi objetivo es que cada clienta se sienta única y radiante. Trabajo con técnicas
+          modernas como la manicura rusa al seco, productos de alta calidad y un enfoque
+          totalmente personalizado.
+        </p>
+        <a
+          href={studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.studio.whatsappMessage)}
+          class="about__cta"
+          target="_blank"
+          rel="noopener"
+        >
+          Conversemos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: 5rem 1.5rem;
+    background: white;
+  }
+
+  .about__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .about__heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 0 3rem;
+    color: #3d2b3d;
+  }
+
+  .about__content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about__photo {
+    flex-shrink: 0;
+  }
+
+  .about__photo-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ede4ed;
+  }
+
+  .about__text {
+    flex: 1;
+  }
+
+  .about__text p {
+    color: #6b4c6b;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 0 1rem;
+  }
+
+  .about__cta {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+  }
+
+  .about__cta:hover {
+    background: #1da851;
+  }
+
+  @media (max-width: 600px) {
+    .about__content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
