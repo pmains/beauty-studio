@@ -30,8 +30,8 @@
       "heroSubtitle": "Resalta tu belleza en cada ocasión",
       "heroText": "Ya sea para una reunión casual, una sesión de fotos, una boda o tus quince años, creo un look que realza tu estilo y personalidad con productos profesionales de larga duración.",
       "services": [
-        { "name": "Maquillaje Social", "price": 100 },
-        { "name": "Maquillaje Artístico", "price": 130 },
+        { "name": "Social", "price": 100 },
+        { "name": "Artístico", "price": 130 },
         { "name": "Novias y Quinceañeras", "price": 230 }
       ]
     },
