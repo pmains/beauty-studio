@@ -5,4 +5,79 @@ import studio from '@/data/services.json';
 const category = studio.categories.find(c => c.id === 'maquillaje')!;
 ---
 
-<ServiceLayout category={category} />
+<ServiceLayout category={category}>
+  <section class="maquillaje-gallery" slot="gallery">
+    <div class="maquillaje-gallery__container">
+      <h2>Nuestros Trabajos de Maquillaje</h2>
+      <div class="maquillaje-gallery__grid">
+        <div class="maquillaje-gallery__item">
+          <img src="/images/maquillaje/maquillaje-social-elegante-piura-1.jpg" alt="Maquillaje social elegante con piel luminosa, sombras nude y delineado cat eye en modelo con aretes brillantes" loading="lazy" width="400" height="400" />
+          <span class="maquillaje-gallery__label">Maquillaje Social</span>
+        </div>
+        <div class="maquillaje-gallery__item">
+          <img src="/images/maquillaje/maquillaje-novia-bridal-piura-2.jpg" alt="Maquillaje de novia con sombras suaves rosadas, delineado delicado, pestañas largas y velo blanco" loading="lazy" width="400" height="400" />
+          <span class="maquillaje-gallery__label">Maquillaje de Novia</span>
+        </div>
+        <div class="maquillaje-gallery__item">
+          <img src="/images/maquillaje/maquillaje-social-glam-piura-3.jpg" alt="Maquillaje social glam con ojos en tonos marrones cálidos, pestañas voluminosas y labios nude brillantes" loading="lazy" width="400" height="400" />
+          <span class="maquillaje-gallery__label">Maquillaje Social Glam</span>
+        </div>
+        <div class="maquillaje-gallery__item">
+          <img src="/images/maquillaje/maquillaje-artistico-editorial-piura-4.jpg" alt="Maquillaje artístico editorial con diseño de araña en el ojo, sombras negras ahumadas y labios morado oscuro" loading="lazy" width="400" height="400" />
+          <span class="maquillaje-gallery__label">Maquillaje Artístico</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</ServiceLayout>
+
+<style>
+  .maquillaje-gallery {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .maquillaje-gallery__container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .maquillaje-gallery h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #3d2b3d;
+    margin: 0 0 2rem;
+  }
+
+  .maquillaje-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .maquillaje-gallery__item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(61, 43, 61, 0.08);
+  }
+
+  .maquillaje-gallery__item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .maquillaje-gallery__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(61, 43, 61, 0.85));
+    color: white;
+    padding: 2rem 1rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+</style>
