@@ -19,6 +19,17 @@ const { entry } = Astro.props;
 const { data, body } = entry;
 const formalName = data.title.split(" en ")[0];
 
+// Fetch related services (same category, excluding self)
+const allServices = await getCollection('services');
+const related = allServices
+  .filter(s => s.data.serviceCategory === data.serviceCategory && s.data.slug !== data.slug)
+  .slice(0, 3);
+
+// Cross-category related (complementary)
+const crossRelated = allServices
+  .filter(s => s.data.serviceCategory !== data.serviceCategory)
+  .slice(0, 2);
+
 const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(
   `Hola Noemi, me interesa el servicio de ${formalName}. ¿Tienes disponibilidad?`
 );
@@ -69,6 +80,7 @@ const faqLd = `{
     <div class="service-body__container">
       <h2>{formalName} en {data.city}</h2>
       <div class="service-body__content" set:html={body} />
+      <a href="/#galeria" class="service-body__gallery">Ver trabajos realizados →</a>
     </div>
   </section>
 
@@ -100,6 +112,26 @@ const faqLd = `{
             <p>{item.a}</p>
           </div>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="service-related">
+    <div class="service-related__container">
+      <h2>También te puede interesar</h2>
+      <div class="service-related__grid">
+        {related.concat(crossRelated).slice(0, 4).map((s) => (
+          <a href={"/services/" + s.data.slug + "/"} class="service-related__card">
+            <h3>{s.data.title}</h3>
+            <p>{s.data.priceRange}</p>
+          </a>
+        ))}
+      </div>
+      <div class="service-related__gallery">
+        <a href="/#galeria" class="service-related__gallery-link">
+          Ver galería de trabajos →
+        </a>
       </div>
     </div>
   </section>
@@ -191,6 +223,30 @@ const faqLd = `{
     font-size: 1.05rem;
     line-height: 1.8;
     margin: 0 0 1rem;
+  }
+
+  .service-body__content a {
+    color: #6b4c6b;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .service-body__content a:hover {
+    color: #3d2b3d;
+  }
+
+  .service-body__gallery {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #6b4c6b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .service-body__gallery:hover {
+    color: #3d2b3d;
   }
 
   .service-pricing {
@@ -351,5 +407,74 @@ const faqLd = `{
   .service-contact__secondary:hover {
     background: #6b4c6b;
     transform: translateY(-2px);
+  }
+
+  .service-related {
+    padding: 4rem 1.5rem;
+    background: white;
+  }
+
+  .service-related__container {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .service-related h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #3d2b3d;
+    margin: 0 0 2rem;
+  }
+
+  .service-related__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .service-related__card {
+    display: block;
+    padding: 1.2rem;
+    background: #faf5f7;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .service-related__card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(61, 43, 61, 0.1);
+  }
+
+  .service-related__card h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #3d2b3d;
+    margin: 0 0 0.3rem;
+  }
+
+  .service-related__card p {
+    font-size: 0.85rem;
+    color: #9e7a9e;
+    margin: 0;
+  }
+
+  .service-related__gallery {
+    margin-top: 2rem;
+  }
+
+  .service-related__gallery-link {
+    display: inline-block;
+    color: #6b4c6b;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .service-related__gallery-link:hover {
+    color: #3d2b3d;
   }
 </style>

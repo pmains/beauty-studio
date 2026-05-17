@@ -1,7 +1,7 @@
 ---
 title: "Manicura Semipermanente en Piura"
 slug: "manicura-semipermanente-piura"
-serviceCategory: "manicura"
+serviceCategory: "manicura-pedicura"
 city: "Piura"
 description: "Manicura semipermanente en Piura con esmaltado de larga duración y manicura rusa al seco. Resultados impecables por 2 a 3 semanas. Reserva por WhatsApp."
 priceRange: "S/40"
@@ -34,3 +34,5 @@ Disfruta de una manicura semipermanente impecable en Piura, combinada con la té
 Trabajo con esmaltes de alta calidad que ofrecen un brillo intenso y una duración de 2 a 3 semanas sin descascararse. La preparación incluye limpieza rusa al seco con herramientas desechables, hidratación y exfoliación para unas uñas sanas y hermosas.
 
 El resultado son uñas perfectamente esmaltadas con el color que elijas, libres de imperfecciones y con un acabado profesional que dura.
+
+Si buscas más longitud o un diseño más elaborado, revisa nuestro servicio de [uñas esculpidas](/services/unas-esculpidas-piura/). También ofrezco [diseño de cejas](/services/diseno-cejas-piura/) para completar tu look.

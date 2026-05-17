@@ -34,3 +34,5 @@ Descubre el maquillaje profesional en Piura que realza tu belleza y te hace sent
 Ya sea para una reunión casual, una sesión de fotos, una boda o tus quince años, creo un look completamente personalizado que resalta tus mejores rasgos. Trabajo con productos profesionales de larga duración que garantizan un acabado impecable de 8 a 12 horas.
 
 Cada sesión incluye preparación de la piel, corrección de imperfecciones, aplicación de productos de alta cobertura y acabado con selladores para máxima duración. Para novias y quinceañeras ofrezco una prueba previa para asegurar que el look sea exactamente lo que deseas.
+
+Para un look completo, agrega [extensiones de pestañas](/services/extensiones-pestanas-piura/) o un [diseño de cejas con pigmentación](/services/diseno-cejas-piura/).

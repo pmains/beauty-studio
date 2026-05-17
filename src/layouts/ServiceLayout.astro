@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
@@ -14,6 +15,12 @@ const { category } = Astro.props;
 
 const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(
   `Hola Noemi, me interesa el servicio de ${category.shortName}. ¿Tienes disponibilidad?`
+);
+
+// Link to specific service pages from content collection
+const allServices = await getCollection('services');
+const relatedServices = allServices.filter(
+  s => s.data.serviceCategory === category.id
 );
 ---
 
@@ -34,8 +41,26 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(
   <section class="service-desc">
     <div class="service-desc__container">
       <p>{category.heroText}</p>
+      <a href="/#galeria" class="service-desc__gallery">Ver trabajos realizados →</a>
     </div>
   </section>
+
+  {relatedServices.length > 0 && (
+    <section class="service-subpages">
+      <div class="service-subpages__container">
+        <h2>Servicios específicos</h2>
+        <div class="service-subpages__grid">
+          {relatedServices.map((s) => (
+            <a href={"/services/" + s.data.slug + "/"} class="service-subpages__card">
+              <h3>{s.data.title}</h3>
+              <p>{s.data.description.slice(0, 120)}…</p>
+              <span class="service-subpages__price">{s.data.priceRange}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   <section class="service-pricing" id="precios">
     <div class="service-pricing__container">
@@ -135,6 +160,80 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(
     font-size: 1.05rem;
     line-height: 1.7;
     text-align: center;
+    margin: 0 0 1rem;
+  }
+
+  .service-desc__gallery {
+    display: inline-block;
+    color: #6b4c6b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .service-desc__gallery:hover {
+    color: #3d2b3d;
+  }
+
+  .service-subpages {
+    padding: 3rem 1.5rem 2rem;
+    background: #faf5f7;
+  }
+
+  .service-subpages__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .service-subpages h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #3d2b3d;
+    margin: 0 0 1.5rem;
+  }
+
+  .service-subpages__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .service-subpages__card {
+    display: block;
+    padding: 1.2rem;
+    background: white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(61, 43, 61, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .service-subpages__card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(61, 43, 61, 0.1);
+  }
+
+  .service-subpages__card h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #3d2b3d;
+    margin: 0 0 0.4rem;
+  }
+
+  .service-subpages__card p {
+    font-size: 0.82rem;
+    color: #9e7a9e;
+    line-height: 1.4;
+    margin: 0 0 0.5rem;
+  }
+
+  .service-subpages__price {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6b4c6b;
   }
 
   .service-pricing {

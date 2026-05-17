@@ -1,7 +1,7 @@
 ---
 title: "Diseño de Cejas en Piura"
 slug: "diseno-cejas-piura"
-serviceCategory: "cejas"
+serviceCategory: "cejas-pestanas"
 city: "Piura"
 description: "Diseño de cejas profesional en Piura con pigmentación y lifting. Resultados naturales que realzan tu mirada. Atención personalizada con cita previa."
 priceRange: "S/20 – S/80"
@@ -36,3 +36,5 @@ Transforma tu mirada con un diseño de cejas profesional en Piura que resalta tu
 Tus cejas son el marco de tu rostro. Trabajo con técnicas de diseño, pigmentación y lifting para lograr una forma que favorezca tu rostro y resalte tu mirada de manera natural. Cada sesión es completamente personalizada, analizando la forma de tu rostro, el color de tu cabello y tus preferencias.
 
 El servicio incluye asesoría sobre la forma ideal para ti, depilación precisa con pinza, pigmentación semipermanente si lo deseas, y lifting para dar volumen y dirección a tus cejas.
+
+Para una mirada aún más impactante, complementa tu diseño de cejas con [extensiones de pestañas](/services/extensiones-pestanas-piura/) o un [maquillaje profesional](/services/maquillaje-profesional-piura/).

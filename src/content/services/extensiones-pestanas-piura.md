@@ -1,7 +1,7 @@
 ---
 title: "Extensiones de Pestañas en Piura"
 slug: "extensiones-pestanas-piura"
-serviceCategory: "pestanas"
+serviceCategory: "cejas-pestanas"
 city: "Piura"
 description: "Extensiones de pestañas en Piura con aplicación profesional. Pestañas más largas, gruesas y voluminosas con resultado natural. Reserva por WhatsApp."
 priceRange: "S/60 – S/100"
@@ -34,3 +34,5 @@ Realza tu mirada con extensiones de pestañas profesionales en Piura. Logra pest
 Aplico cada extensión individualmente sobre tu pestaña natural, adaptando el largo, grosor y curvatura según la forma de tus ojos y el look que desees. El resultado es una mirada espectacular sin necesidad de máscara de pestañas.
 
 También ofrezco lifting de pestañas, ideal si buscas realzar tus pestañas naturales sin extensiones. El lifting las deja curvadas hacia arriba para una mirada más abierta y despierta.
+
+Completa tu look con un [diseño de cejas](/services/diseno-cejas-piura/) profesional o [maquillaje para novias y eventos](/services/maquillaje-profesional-piura/).

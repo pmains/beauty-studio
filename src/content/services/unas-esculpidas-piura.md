@@ -1,7 +1,7 @@
 ---
 title: "Uñas Esculpidas y Acrílicas en Piura"
 slug: "unas-esculpidas-piura"
-serviceCategory: "manicura"
+serviceCategory: "manicura-pedicura"
 city: "Piura"
 description: "Uñas esculpidas, acrílicas y polygel en Piura. Extensiones de uñas personalizadas en largo y forma. Resultados duraderos y naturales. Reserva tu cita."
 priceRange: "S/70 – S/100"
@@ -40,3 +40,5 @@ Luce uñas esculpidas espectaculares en Piura con técnicas profesionales que se
 Ya sea que prefieras uñas esculpidas en acrílico, polygel, rubber gel o apres gel, trabajo cada uña de forma individual para garantizar un resultado natural, cómodo y duradero. Puedes elegir el largo, la forma y el diseño que más te guste.
 
 Todas las técnicas incluyen preparación de la uña natural con manicura rusa al seco, aplicación del material elegido y esmaltado semipermanente o decoración según tu preferencia. El resultado son uñas fuertes, hermosas y con un acabado profesional.
+
+¿Prefieres un acabado más natural? Prueba nuestra [manicura semipermanente](/services/manicura-semipermanente-piura/). Y si quieres un look completo, combínalo con [maquillaje profesional](/services/maquillaje-profesional-piura/).
