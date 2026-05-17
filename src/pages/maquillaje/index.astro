@@ -5,7 +5,7 @@ import studio from '@/data/services.json';
 const category = studio.categories.find(c => c.id === 'maquillaje')!;
 ---
 
-<ServiceLayout category={category}>
+<ServiceLayout category={category} hideContact={true}>
   <section class="maquillaje-gallery" slot="gallery">
     <div class="maquillaje-gallery__container">
       <h2>Nuestros Trabajos de Maquillaje</h2>

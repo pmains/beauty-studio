@@ -10,9 +10,10 @@ import '@/styles/global.css';
 
 export interface Props {
   category: typeof studio.categories[0];
+  hideContact?: boolean;
 }
 
-const { category } = Astro.props;
+const { category, hideContact = false } = Astro.props;
 
 const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(
   `Hola Noemi, me interesa el servicio de ${category.shortName}. ¿Tienes disponibilidad?`
@@ -60,7 +61,7 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(
     </div>
   </section>
 
-  <section class="service-contact">
+  {!hideContact && <section class="service-contact">
     <div class="service-contact__container">
       <h2>¿Lista para tu cita?</h2>
       <p>Reserva por WhatsApp o llámame al {studio.studio.phoneDisplay}</p>
@@ -69,7 +70,7 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(
         Reservar por WhatsApp
       </a>
     </div>
-  </section>
+  </section>}
 
   <Footer />
   <Watermark />
