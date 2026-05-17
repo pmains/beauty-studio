@@ -10,9 +10,26 @@ import ServiceCard from '@/components/ServiceCard.astro';
       Todos los precios en {studio.studio.currency} — Reserva por WhatsApp y asegura tu hora.
     </p>
 
+    <div class="services__grid services__grid--top">
+      {
+        studio.categories.slice(0, 3).map((category) => (
+          <div class="services__category">
+            <a href={"/" + category.slug + "/"} class="services__category-title">{category.name}</a>
+            <div class="services__list">
+              {category.services.map((service) => (
+                <ServiceCard name={service.name} price={service.price} />
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <h3 class="services__divider">Nuestros Servicios en Uñas</h3>
+
     <div class="services__grid">
       {
-        studio.categories.map((category) => (
+        studio.categories.slice(3).map((category) => (
           <div class="services__category">
             <a href={"/" + category.slug + "/"} class="services__category-title">{category.name}</a>
             <div class="services__list">
@@ -67,6 +84,16 @@ import ServiceCard from '@/components/ServiceCard.astro';
     color: #9e7a9e;
     font-size: 0.95rem;
     margin: 0 0 3rem;
+  }
+
+  .services__divider {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #3d2b3d;
+    margin: 3rem 0 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ede4ed;
   }
 
   .services__grid {
