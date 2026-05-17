@@ -26,14 +26,7 @@ import studio from '@/data/services.json';
           modernas como la manicura rusa al seco, productos de alta calidad y un enfoque
           totalmente personalizado.
         </p>
-        <a
-          href={studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.studio.whatsappMessage)}
-          class="about__cta"
-          target="_blank"
-          rel="noopener"
-        >
-          Conversemos por WhatsApp
-        </a>
+
       </div>
     </div>
   </div>
@@ -87,21 +80,7 @@ import studio from '@/data/services.json';
     margin: 0 0 1rem;
   }
 
-  .about__cta {
-    display: inline-block;
-    background: #25d366;
-    color: white;
-    padding: 0.7rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: background 0.2s;
-  }
 
-  .about__cta:hover {
-    background: #1da851;
-  }
 
   @media (max-width: 600px) {
     .about__content {
