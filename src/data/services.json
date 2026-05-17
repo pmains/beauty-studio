@@ -21,9 +21,19 @@
   },
   "categories": [
     {
-      "id": "manicura",
-      "name": "Manicura",
-      "icon": "nails",
+      "id": "manicura-pedicura",
+      "slug": "manicura-pedicura",
+      "name": "Manicura y Pedicura",
+      "shortName": "Uñas",
+      "title": "Manicura y Pedicura en Piura | Noemi Parrales Beauty Studio",
+      "description": "Uñas perfectas con técnicas profesionales: semipermanente, esculpidas, acrílicas, polygel, rubber gel y apres gel. Manicura rusa al seco con máxima higiene.",
+      "heroSubtitle": "Uñas perfectas para cada ocasión",
+      "heroText": "Trabajo con técnicas modernas como la manicura rusa al seco, utilizando herramientas desechables y productos de alta calidad para garantizar duración, higiene y un acabado impecable.",
+      "faq": [
+        { "q": "¿Cuánto dura el esmaltado semipermanente?", "a": "Entre 2 y 3 semanas, dependiendo del cuidado y el crecimiento de la uña." },
+        { "q": "¿La manicura rusa al seco es dolorosa?", "a": "No, es un técnica precisa y cuidadosa que respeta la cutícula sin causar molestias." },
+        { "q": "¿Puedo llevarme las uñas largas con acrílico o polygel?", "a": "Sí, ambas técnicas permiten extensiones de largo y forma personalizada." }
+      ],
       "services": [
         { "name": "Manicura Semipermanente", "price": 40 },
         { "name": "Pedicura Semipermanente", "price": 40 },
@@ -37,8 +47,18 @@
     },
     {
       "id": "maquillaje",
+      "slug": "maquillaje",
       "name": "Maquillaje",
-      "icon": "makeup",
+      "shortName": "Maquillaje",
+      "title": "Maquillaje Profesional en Piura | Noemi Parrales Beauty Studio",
+      "description": "Maquillaje social, artístico, para novias y quinceañeras en Piura. Looks duraderos y personalizados para cada ocasión.",
+      "heroSubtitle": "Resalta tu belleza en cada ocasión",
+      "heroText": "Ya sea para una reunión casual, una sesión de fotos, una boda o tus quince años, creo un look que realza tu estilo y personalidad con productos profesionales de larga duración.",
+      "faq": [
+        { "q": "¿Cuánto tiempo antes debo reservar para maquillaje de novia?", "a": "Recomiendo reservar con al menos 2 semanas de anticipación para coordinar una prueba de maquillaje." },
+        { "q": "¿Incluye pestañas el maquillaje?", "a": "El maquillaje social y artístico incluye aplicación de pestañas postizas. Para novias y quinceañeras se coordina según el look deseado." },
+        { "q": "¿Cuánto dura el maquillaje?", "a": "Con productos profesionales, el maquillaje dura entre 8 y 12 horas sin retoques." }
+      ],
       "services": [
         { "name": "Maquillaje Social", "price": 120 },
         { "name": "Maquillaje Artístico", "price": 150 },
@@ -46,20 +66,24 @@
       ]
     },
     {
-      "id": "pestanas",
-      "name": "Pestañas",
-      "icon": "lashes",
+      "id": "cejas-pestanas",
+      "slug": "cejas-pestanas",
+      "name": "Cejas y Pestañas",
+      "shortName": "Cejas",
+      "title": "Cejas y Pestañas en Piura | Noemi Parrales Beauty Studio",
+      "description": "Diseño de cejas, pigmentación, lifting, y extensiones de pestañas en Piura. Resultados naturales que realzan tu mirada.",
+      "heroSubtitle": "Una mirada que habla por sí sola",
+      "heroText": "Tus cejas y pestañas son el marco de tu rostro. Trabajo con técnicas de diseño, pigmentación y lifting para lograr un resultado natural y favorecedor que realza tu mirada.",
+      "faq": [
+        { "q": "¿Duele el diseño de cejas con pigmento?", "a": "Es un procedimiento suave. Aplico anestesia tópica para minimizar cualquier molestia." },
+        { "q": "¿Cuánto dura el lifting de pestañas?", "a": "Entre 6 y 8 semanas, dependiendo del ciclo natural de crecimiento de tus pestañas." },
+        { "q": "¿Puedo maquillarme después del diseño de cejas?", "a": "Se recomienda esperar 24 horas antes de maquillar la zona para permitir que el pigmento se fije correctamente." },
+        { "q": "¿Cada cuánto debo retocar el diseño de cejas?", "a": "Recomiendo un retoque cada 4 a 6 semanas para mantener la forma y el color." }
+      ],
       "services": [
         { "name": "Extensiones de Pestañas", "price": 100 },
         { "name": "Lifting de Pestañas", "price": 60 },
-        { "name": "Lifting + Pigmento", "price": 70 }
-      ]
-    },
-    {
-      "id": "cejas",
-      "name": "Cejas",
-      "icon": "brows",
-      "services": [
+        { "name": "Lifting + Pigmento", "price": 70 },
         { "name": "Diseño de Cejas", "price": 20 },
         { "name": "Diseño + Pigmento", "price": 30 },
         { "name": "Diseño + Lifting", "price": 60 },

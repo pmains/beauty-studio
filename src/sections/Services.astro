@@ -14,7 +14,7 @@ import ServiceCard from '@/components/ServiceCard.astro';
       {
         studio.categories.map((category) => (
           <div class="services__category">
-            <h3 class="services__category-title">{category.name}</h3>
+            <a href="/{category.slug}/" class="services__category-title">{category.name}</a>
             <div class="services__list">
               {category.services.map((service) => (
                 <ServiceCard name={service.name} price={service.price} />
@@ -83,13 +83,25 @@ import ServiceCard from '@/components/ServiceCard.astro';
   }
 
   .services__category-title {
+    display: block;
     background: #3d2b3d;
     color: white;
+    text-decoration: none;
     margin: 0;
     padding: 1rem 1.2rem;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.05em;
+    transition: background 0.2s;
+  }
+
+  .services__category-title:hover {
+    background: #6b4c6b;
+  }
+
+  .services__category-title::after {
+    content: " →";
+    opacity: 0.5;
   }
 
   .services__list {
