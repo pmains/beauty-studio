@@ -4,6 +4,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 import WhatsAppFAB from '@/components/WhatsAppFAB.astro';
+import Watermark from '@/components/Watermark.astro';
 import studio from '@/data/services.json';
 import '@/styles/global.css';
 
@@ -49,6 +50,7 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(
   </section>
 
   <Footer />
+  <Watermark />
   <WhatsAppFAB />
 </BaseLayout>
 

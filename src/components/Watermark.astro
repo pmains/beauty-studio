@@ -1,0 +1,27 @@
+<div class="watermark">
+  <img src="/images/noemi-watermark.png" alt="" class="watermark__img" width="707" height="353" />
+</div>
+
+<style>
+  .watermark {
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.12;
+  }
+
+  .watermark__img {
+    width: 140px;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 600px) {
+    .watermark {
+      display: none;
+    }
+  }
+</style>
