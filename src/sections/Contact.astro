@@ -9,6 +9,7 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
     <h2 class="contact__heading">Contáctanos</h2>
     <p class="contact__subtext">
       Reserva tu cita por WhatsApp o llámame directamente.
+      Atiendo con cita previa en Urb. El Bosque, Castilla — Piura.
     </p>
 
     <div class="contact__methods">
@@ -42,7 +43,19 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
       </a>
     </div>
 
-    <p class="contact__location">{studio.studio.location}</p>
+    <div class="contact__info">
+      <div class="contact__info-block">
+        <h3>Ubicación</h3>
+        <p>{studio.studio.location}</p>
+        <p class="contact__note">Atiendo con cita previa — Studio en casa</p>
+      </div>
+      <div class="contact__info-block">
+        <h3>Horario</h3>
+        <p>{studio.studio.hours.weekdays}</p>
+        <p>{studio.studio.hours.saturday}</p>
+        <p class="contact__note">{studio.studio.hours.sunday}</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -68,6 +81,7 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
   .contact__subtext {
     color: #9e7a9e;
     margin: 0 0 3rem;
+    font-size: 0.95rem;
   }
 
   .contact__methods {
@@ -116,6 +130,35 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
     opacity: 0.85;
   }
 
+  .contact__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .contact__info-block h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #3d2b3d;
+    margin: 0 0 0.5rem;
+  }
+
+  .contact__info-block p {
+    color: #6b4c6b;
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+  }
+
+  .contact__note {
+    color: #9e7a9e;
+    font-size: 0.8rem !important;
+    margin-top: 0.3rem;
+  }
+
   .contact__location {
     margin-top: 2rem;
     color: #9e7a9e;
@@ -130,6 +173,10 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
 
     .contact__card-detail {
       margin-left: 0;
+    }
+
+    .contact__info {
+      grid-template-columns: 1fr;
     }
   }
 </style>

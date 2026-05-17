@@ -1,7 +1,10 @@
 {
   "studio": {
     "name": "Noemi Parrales Beauty Studio",
-    "location": "Piura, Perú",
+    "location": "Urb. El Bosque, Castilla — Piura, Perú",
+    "area": "Castilla, Piura",
+    "isHomeBased": true,
+    "appointmentOnly": true,
     "phone": "+51986448568",
     "phoneDisplay": "+51 986 448 568",
     "email": "noemi.parrales@hotmail.com",
@@ -9,7 +12,12 @@
     "whatsappMessage": "Hola Noemi, me gustaría reservar una cita. ¿Tienes disponibilidad?",
     "facebook": "https://www.facebook.com/noemiparralesmakeupartist",
     "instagram": "https://www.instagram.com/noemiparrales_beautystudio/",
-    "currency": "S/"
+    "currency": "S/",
+    "hours": {
+      "weekdays": "Lun – Vie: 9:00 a 19:00",
+      "saturday": "Sáb: 9:00 a 14:00",
+      "sunday": "Dom: Cerrado"
+    }
   },
   "categories": [
     {

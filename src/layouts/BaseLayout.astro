@@ -7,7 +7,7 @@ export interface Props {
 
 const {
   title = "Noemi Parrales Beauty Studio | Manicura, Pedicura y Maquillaje en Piura",
-  description = "Manicura, pedicura, maquillaje profesional, diseño de cejas y pestañas en Piura, Perú. Reserva tu cita por WhatsApp.",
+  description = "Manicura, pedicura, maquillaje profesional, diseño de cejas y pestañas en Castilla, Piura. Studio en casa con cita previa. Reserva por WhatsApp.",
   image = "/images/noemi-banner.png"
 } = Astro.props;
 
@@ -43,7 +43,7 @@ const siteName = "Noemi Parrales Beauty Studio";
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Noemi Parrales Beauty Studio",
-        "description": "Manicura, pedicura, maquillaje profesional, diseño de cejas y pestañas en Piura",
+        "description": "Manicura, pedicura, maquillaje profesional, diseño de cejas y pestañas en Castilla, Piura. Studio en casa con cita previa.",
         "url": "https://noemiparralesbeautystudio.com",
         "telephone": "+51986448568",
         "email": "noemi.parrales@hotmail.com",
@@ -59,8 +59,16 @@ const siteName = "Noemi Parrales Beauty Studio";
         ],
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Piura",
+          "addressLocality": "Castilla",
+          "addressRegion": "Piura",
           "addressCountry": "PE"
+        },
+        "makesOffer": {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Manicura, Pedicura, Maquillaje y Diseño de Cejas"
+          }
         },
         "sameAs": [
           "https://www.facebook.com/noemiparralesmakeupartist",
