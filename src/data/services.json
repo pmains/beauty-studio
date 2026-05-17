@@ -21,6 +21,52 @@
   },
   "categories": [
     {
+      "id": "maquillaje",
+      "slug": "maquillaje",
+      "name": "Maquillaje",
+      "shortName": "Maquillaje",
+      "title": "Maquillaje Profesional en Piura | Noemi Parrales Beauty Studio",
+      "description": "Maquillaje profesional en Piura para toda ocasión: social, artístico, novias y quinceañeras. Looks duraderos y personalizados.",
+      "heroSubtitle": "Resalta tu belleza en cada ocasión",
+      "heroText": "Ya sea para una reunión casual, una sesión de fotos, una boda o tus quince años, creo un look que realza tu estilo y personalidad con productos profesionales de larga duración.",
+      "services": [
+        { "name": "Maquillaje Social", "price": 100 },
+        { "name": "Maquillaje Artístico", "price": 130 },
+        { "name": "Novias y Quinceañeras", "price": 230 }
+      ]
+    },
+    {
+      "id": "pestanas",
+      "slug": "pestanas",
+      "name": "Pestañas",
+      "shortName": "Pestañas",
+      "title": "Extensiones y Lifting de Pestañas en Piura | Noemi Parrales Beauty Studio",
+      "description": "Extensiones de pestañas y lifting en Piura. Pestañas más largas, curvadas y voluminosas con resultado natural.",
+      "heroSubtitle": "Una mirada que hipnotiza",
+      "heroText": "Realza tu mirada con extensiones de pestañas profesionales o lifting natural. Resultados espectaculares sin máscara.",
+      "services": [
+        { "name": "Extensiones", "price": 80 },
+        { "name": "Lifting", "price": 60 },
+        { "name": "Lifting + Pigmento", "price": 70 }
+      ]
+    },
+    {
+      "id": "cejas",
+      "slug": "cejas",
+      "name": "Cejas",
+      "shortName": "Cejas",
+      "title": "Diseño de Cejas en Piura | Noemi Parrales Beauty Studio",
+      "description": "Diseño de cejas profesional en Piura: diseño, pigmentación y laminado. Resultados naturales que realzan tu mirada.",
+      "heroSubtitle": "El marco perfecto para tu rostro",
+      "heroText": "Tus cejas son el marco de tu rostro. Trabajo con técnicas de diseño, pigmentación y laminado para lograr una forma que favorezca tu rostro.",
+      "services": [
+        { "name": "Diseño", "price": 20 },
+        { "name": "Diseño + Pigmento", "price": 30 },
+        { "name": "Diseño + Laminado", "price": 60 },
+        { "name": "Diseño + Pigmento + Laminado", "price": 80 }
+      ]
+    },
+    {
       "id": "una-natural",
       "slug": "manicura",
       "name": "Uña Natural",
@@ -71,52 +117,6 @@
         { "name": "Pedicura Japonesa", "price": 45 },
         { "name": "Semipermanente", "price": 45 },
         { "name": "Builder Gel", "price": 60 }
-      ]
-    },
-    {
-      "id": "maquillaje",
-      "slug": "maquillaje",
-      "name": "Maquillaje",
-      "shortName": "Maquillaje",
-      "title": "Maquillaje Profesional en Piura | Noemi Parrales Beauty Studio",
-      "description": "Maquillaje profesional en Piura para toda ocasión: social, artístico, novias y quinceañeras. Looks duraderos y personalizados.",
-      "heroSubtitle": "Resalta tu belleza en cada ocasión",
-      "heroText": "Ya sea para una reunión casual, una sesión de fotos, una boda o tus quince años, creo un look que realza tu estilo y personalidad con productos profesionales de larga duración.",
-      "services": [
-        { "name": "Maquillaje Social", "price": 100 },
-        { "name": "Maquillaje Artístico", "price": 130 },
-        { "name": "Novias y Quinceañeras", "price": 230 }
-      ]
-    },
-    {
-      "id": "pestanas",
-      "slug": "pestanas",
-      "name": "Pestañas",
-      "shortName": "Pestañas",
-      "title": "Extensiones y Lifting de Pestañas en Piura | Noemi Parrales Beauty Studio",
-      "description": "Extensiones de pestañas y lifting en Piura. Pestañas más largas, curvadas y voluminosas con resultado natural.",
-      "heroSubtitle": "Una mirada que hipnotiza",
-      "heroText": "Realza tu mirada con extensiones de pestañas profesionales o lifting natural. Resultados espectaculares sin máscara.",
-      "services": [
-        { "name": "Extensiones", "price": 80 },
-        { "name": "Lifting", "price": 60 },
-        { "name": "Lifting + Pigmento", "price": 70 }
-      ]
-    },
-    {
-      "id": "cejas",
-      "slug": "cejas",
-      "name": "Cejas",
-      "shortName": "Cejas",
-      "title": "Diseño de Cejas en Piura | Noemi Parrales Beauty Studio",
-      "description": "Diseño de cejas profesional en Piura: diseño, pigmentación y laminado. Resultados naturales que realzan tu mirada.",
-      "heroSubtitle": "El marco perfecto para tu rostro",
-      "heroText": "Tus cejas son el marco de tu rostro. Trabajo con técnicas de diseño, pigmentación y laminado para lograr una forma que favorezca tu rostro.",
-      "services": [
-        { "name": "Diseño", "price": 20 },
-        { "name": "Diseño + Pigmento", "price": 30 },
-        { "name": "Diseño + Laminado", "price": 60 },
-        { "name": "Diseño + Pigmento + Laminado", "price": 80 }
       ]
     }
   ],
