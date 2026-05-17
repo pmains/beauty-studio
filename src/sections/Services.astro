@@ -14,7 +14,7 @@ import ServiceCard from '@/components/ServiceCard.astro';
       {
         studio.categories.map((category) => (
           <div class="services__category">
-            <a href="/{category.slug}/" class="services__category-title">{category.name}</a>
+            <a href={"/" + category.slug + "/"} class="services__category-title">{category.name}</a>
             <div class="services__list">
               {category.services.map((service) => (
                 <ServiceCard name={service.name} price={service.price} />
