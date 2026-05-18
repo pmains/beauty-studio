@@ -45,14 +45,9 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
 
     <div class="contact__info">
       <div class="contact__info-block">
-        <h3>Ubicación</h3>
-        <p>{studio.studio.location}</p>
-        <p class="contact__note">Atiendo con cita previa — Studio en casa</p>
-      </div>
-      <div class="contact__info-block">
         <h3>Horario</h3>
         <p>{studio.studio.hours.weekdays}</p>
-        <p>{studio.studio.hours.saturday}</p>
+        {studio.studio.hours.saturday && <p>{studio.studio.hours.saturday}</p>}
         <p class="contact__note">{studio.studio.hours.sunday}</p>
       </div>
     </div>
@@ -131,9 +126,6 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
   }
 
   .contact__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
     margin-top: 3rem;
     text-align: center;
   }
@@ -173,10 +165,6 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
 
     .contact__card-detail {
       margin-left: 0;
-    }
-
-    .contact__info {
-      grid-template-columns: 1fr;
     }
   }
 </style>
