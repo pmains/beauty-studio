@@ -7,12 +7,10 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
 <section class="hero">
   <div class="hero__overlay"></div>
   <div class="hero__content">
-    <h1 class="hero__title">
-      <span class="hero__subtitle">Noemi Parrales</span>
-      Beauty Studio
-    </h1>
+    <h1 class="hero__brand">Noemi Parrales</h1>
+    <p class="hero__subtitle">Beauty Studio</p>
     <p class="hero__tagline">
-      Maquillaje profesional, pestañas, cejas, manicura y pedicura. Noemí Parrales Beauty Studio en Piura, Peru. Atención personalizada con previa cita.
+      Maquillaje profesional, pestañas, cejas, manicura y pedicura. En Piura, Peru. Atención personalizada con previa cita.
     </p>
     <div class="hero__actions">
       <a href="#servicios" class="hero__cta hero__cta--secondary">
@@ -58,23 +56,24 @@ const waUrl = studio.studio.whatsappUrl + "?text=" + encodeURIComponent(studio.s
     max-width: 700px;
   }
 
-  .hero__title {
-    font-size: 3rem;
-    font-weight: 300;
+  .hero__brand {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 4.5rem;
     letter-spacing: 0.02em;
-    margin: 0 0 1rem;
-    line-height: 1.15;
+    margin: 0;
+    line-height: 1.1;
+    color: white;
   }
 
   .hero__subtitle {
-    display: block;
     font-family: "Playfair Display", Georgia, serif;
     font-style: italic;
-    font-weight: 400;
-    font-size: 1.3rem;
-    letter-spacing: 0.12em;
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
     color: #ede4ed;
-    margin-bottom: 0.75rem;
+    margin: 0 0 1.5rem;
   }
 
   .hero__tagline {
