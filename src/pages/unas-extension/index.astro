@@ -3,6 +3,37 @@ import ServiceLayout from '@/layouts/ServiceLayout.astro';
 import studio from '@/data/services.json';
 
 const category = studio.categories.find(c => c.id === 'con-extension')!;
+
+const labels = ["Baby Boomer", "Francesa Moderna", "Almendra Elegante", "Diseño Glam", "Polygel Natural", "Apres Gel", "Acrigel Clásico"];
+const images = Array.from({ length: 7 }, (_, i) => ({
+  src: `/images/extensiones/extensiones-${String(i + 1).padStart(2, '0')}.jpg`,
+  label: labels[i],
+  alt: "Extensiones de uñas - Noemi Parrales Beauty Studio Piura"
+}));
 ---
 
-<ServiceLayout category={category} />
+<ServiceLayout category={category} hideContact={true}>
+  <section class="cat-gallery" slot="gallery">
+    <div class="cat-gallery__container">
+      <h2>Galería de Extensiones</h2>
+      <div class="cat-gallery__grid">
+        {images.map((img) => (
+          <div class="cat-gallery__item">
+            <img src={img.src} alt={img.alt} loading="lazy" width="400" height="400" />
+            <span class="cat-gallery__label">{img.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</ServiceLayout>
+
+<style>
+  .cat-gallery { padding: 4rem 1.5rem; background: white; }
+  .cat-gallery__container { max-width: 1000px; margin: 0 auto; }
+  .cat-gallery h2 { text-align: center; font-size: 1.5rem; font-weight: 400; color: #3d2b3d; margin: 0 0 2rem; }
+  .cat-gallery__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+  .cat-gallery__item { position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(61,43,61,0.08); }
+  .cat-gallery__item img { width: 100%; height: auto; display: block; }
+  .cat-gallery__label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(61,43,61,0.85)); color: white; font-family: "Playfair Display", Georgia, serif; font-style: italic; padding: 2rem 1rem 0.75rem; font-size: 0.85rem; }
+</style>
