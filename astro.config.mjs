@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import cloudflare from '@astrojs/cloudflare';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
@@ -9,7 +8,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   site: 'https://noemiparralesbeautystudio.com',
   output: 'static',
-  adapter: cloudflare(),
   integrations: [sitemap()],
   build: {
     format: 'directory',
