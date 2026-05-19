@@ -11,6 +11,9 @@ dist
 .DS_Store
 Thumbs.db
 
+# Wrangler (Cloudflare local state)
+.wrangler
+
 # Astro generated
 .astro
 
