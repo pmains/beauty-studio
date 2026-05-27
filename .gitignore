@@ -17,6 +17,10 @@ Thumbs.db
 # Astro generated
 .astro
 
+# Cloudflare tokens
+*token
+!.gitignore
+
 # OpenClaw workspace
 .openclaw
 AGENTS.md
