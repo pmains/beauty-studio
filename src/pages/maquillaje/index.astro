@@ -3,6 +3,57 @@ import ServiceLayout from '@/layouts/ServiceLayout.astro';
 import studio from '@/data/services.json';
 
 const category = studio.categories.find(c => c.id === 'maquillaje')!;
+
+const images = [
+  // Existing named files
+  { src: "/images/maquillaje/maquillaje-social-elegante-piura-1.jpg", label: "Maquillaje Social", alt: "Maquillaje social elegante con piel luminosa, sombras nude y delineado cat eye en modelo con aretes brillantes" },
+  { src: "/images/maquillaje/maquillaje-social-elegante-piura-1.1.jpg", label: "Maquillaje Social", alt: "Maquillaje social elegante - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-novia-bridal-piura-2.jpg", label: "Maquillaje de Novia", alt: "Maquillaje de novia con sombras suaves rosadas, delineado delicado, pestañas largas y velo blanco" },
+  { src: "/images/maquillaje/maquillaje-novia-bridal-piura-3.jpg", label: "Maquillaje de Novia", alt: "Maquillaje de novia profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-glam-piura-3.jpg", label: "Maquillaje Social", alt: "Maquillaje social glam con ojos en tonos marrones cálidos, pestañas voluminosas y labios nude brillantes" },
+  { src: "/images/maquillaje/maquillaje-social-glam-piura-4.jpg", label: "Maquillaje Social", alt: "Maquillaje social glam - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-editorial-piura-4.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico editorial con diseño de araña en el ojo, sombras negras ahumadas y labios morado oscuro" },
+  { src: "/images/maquillaje/maquillaje-soft-glam-natural-piura.jpg", label: "Maquillaje Social", alt: "Maquillaje soft glam natural en tonos neutros y cálidos, ideal para novias y eventos especiales" },
+  // Social
+  { src: "/images/maquillaje/maquillaje-social-01.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-02.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-03.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-04.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-05.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-06.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-07.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-08.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-09.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-10.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-11.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-12.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-13.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-social-14.jpg", label: "Maquillaje Social", alt: "Maquillaje social profesional - Noemi Parrales Beauty Studio Piura" },
+  // Novia
+  { src: "/images/maquillaje/maquillaje-novia-01.jpg", label: "Maquillaje de Novia", alt: "Maquillaje de novia profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-novia-02.jpg", label: "Maquillaje de Novia", alt: "Maquillaje de novia profesional - Noemi Parrales Beauty Studio Piura" },
+  // Quinceañera
+  { src: "/images/maquillaje/maquillaje-quinceanera-01.jpg", label: "Maquillaje de Quinceañera", alt: "Maquillaje de quinceañera profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-quinceanera-02.jpg", label: "Maquillaje de Quinceañera", alt: "Maquillaje de quinceañera profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-quinceanera-03.jpg", label: "Maquillaje de Quinceañera", alt: "Maquillaje de quinceañera profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-quinceanera-04.jpg", label: "Maquillaje de Quinceañera", alt: "Maquillaje de quinceañera profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-quinceanera-05.jpg", label: "Maquillaje de Quinceañera", alt: "Maquillaje de quinceañera profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-quinceanera-06.jpg", label: "Maquillaje de Quinceañera", alt: "Maquillaje de quinceañera profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-quinceanera-07.jpg", label: "Maquillaje de Quinceañera", alt: "Maquillaje de quinceañera profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-quinceanera-08.jpg", label: "Maquillaje de Quinceañera", alt: "Maquillaje de quinceañera profesional - Noemi Parrales Beauty Studio Piura" },
+  // Artístico
+  { src: "/images/maquillaje/maquillaje-artistico-01.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-02.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-03.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-04.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-05.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-06.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-07.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-08.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-09.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-10.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+  { src: "/images/maquillaje/maquillaje-artistico-11.jpg", label: "Maquillaje Artístico", alt: "Maquillaje artístico profesional - Noemi Parrales Beauty Studio Piura" },
+];
 ---
 
 <ServiceLayout category={category} hideContact={true}>
@@ -10,26 +61,12 @@ const category = studio.categories.find(c => c.id === 'maquillaje')!;
     <div class="maquillaje-gallery__container">
       <h2>Nuestros Trabajos de Maquillaje</h2>
       <div class="maquillaje-gallery__grid">
-        <div class="maquillaje-gallery__item">
-          <img src="/images/maquillaje/maquillaje-social-elegante-piura-1.jpg" alt="Maquillaje social elegante con piel luminosa, sombras nude y delineado cat eye en modelo con aretes brillantes" loading="lazy" width="400" height="400" />
-          <span class="maquillaje-gallery__label">Maquillaje Social</span>
-        </div>
-        <div class="maquillaje-gallery__item">
-          <img src="/images/maquillaje/maquillaje-novia-bridal-piura-2.jpg" alt="Maquillaje de novia con sombras suaves rosadas, delineado delicado, pestañas largas y velo blanco" loading="lazy" width="400" height="400" />
-          <span class="maquillaje-gallery__label">Maquillaje de Novia</span>
-        </div>
-        <div class="maquillaje-gallery__item">
-          <img src="/images/maquillaje/maquillaje-social-glam-piura-3.jpg" alt="Maquillaje social glam con ojos en tonos marrones cálidos, pestañas voluminosas y labios nude brillantes" loading="lazy" width="400" height="400" />
-          <span class="maquillaje-gallery__label">Maquillaje Social Glam</span>
-        </div>
-        <div class="maquillaje-gallery__item">
-          <img src="/images/maquillaje/maquillaje-artistico-editorial-piura-4.jpg" alt="Maquillaje artístico editorial con diseño de araña en el ojo, sombras negras ahumadas y labios morado oscuro" loading="lazy" width="400" height="400" />
-          <span class="maquillaje-gallery__label">Maquillaje Artístico</span>
-        </div>
-        <div class="maquillaje-gallery__item">
-          <img src="/images/maquillaje/maquillaje-soft-glam-natural-piura.jpg" alt="Maquillaje soft glam natural en tonos neutros y cálidos, ideal para novias y eventos especiales" loading="lazy" width="400" height="400" />
-          <span class="maquillaje-gallery__label">Maquillaje Soft Glam</span>
-        </div>
+        {images.map((img) => (
+          <div class="maquillaje-gallery__item">
+            <img src={img.src} alt={img.alt} loading="lazy" width="400" height="400" />
+            <span class="maquillaje-gallery__label">{img.label}</span>
+          </div>
+        ))}
       </div>
     </div>
   </section>
@@ -42,7 +79,7 @@ const category = studio.categories.find(c => c.id === 'maquillaje')!;
   }
 
   .maquillaje-gallery__container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -65,6 +102,9 @@ const category = studio.categories.find(c => c.id === 'maquillaje')!;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(61, 43, 61, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .maquillaje-gallery__item img {

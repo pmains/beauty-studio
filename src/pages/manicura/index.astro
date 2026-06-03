@@ -5,24 +5,44 @@ import studio from '@/data/services.json';
 const category = studio.categories.find(c => c.id === 'una-natural')!;
 
 const labels = [
-  "Manicura Clásica", "Diseño Floral", "Esmaltado Natural", "Manicura Elegante",
-  "Manicura Rosa", "Diseño Geométrico", "Manicura Nude", "Tonos Claros",
-  "Manicura Japonesa", "Diseño Creativo", "Acabado Brillante", "Manicura Glam",
-  "Acrigel Natural", "Diseño Minimalista", "Baño de Polygel", "Decoración Floral",
-  "Builder Gel"
+  "Semipermanente", "Baby Color en Builder Gel", "Semipermanente", "Builder Gel",
+  "Semipermanente", "Semipermanente", "Semipermanente", "Builder Gel",
+  "Ojo de Gato y Builder Gel", "Masglo Evolution", "Ojo de Gato y Builder Gel", "Builder Gel",
+  "Builder Gel", "Semipermanente", "Masglo Evolution", "Semipermanente",
+  "Francesa con Efecto Aurora en Builder Gel"
+];
+
+const alts = [
+  "Manicura semipermanente - Noemi Parrales Beauty Studio Piura",
+  "Baby Color en builder gel - Noemi Parrales Beauty Studio Piura",
+  "Manicura semipermanente - Noemi Parrales Beauty Studio Piura",
+  "Manicura builder gel - Noemi Parrales Beauty Studio Piura",
+  "Manicura semipermanente - Noemi Parrales Beauty Studio Piura",
+  "Manicura semipermanente - Noemi Parrales Beauty Studio Piura",
+  "Manicura semipermanente - Noemi Parrales Beauty Studio Piura",
+  "Manicura builder gel - Noemi Parrales Beauty Studio Piura",
+  "Ojo de gato y builder gel - Noemi Parrales Beauty Studio Piura",
+  "Masglo Evolution - Noemi Parrales Beauty Studio Piura",
+  "Ojo de gato y builder gel - Noemi Parrales Beauty Studio Piura",
+  "Manicura builder gel - Noemi Parrales Beauty Studio Piura",
+  "Manicura builder gel - Noemi Parrales Beauty Studio Piura",
+  "Manicura semipermanente - Noemi Parrales Beauty Studio Piura",
+  "Masglo Evolution - Noemi Parrales Beauty Studio Piura",
+  "Manicura semipermanente - Noemi Parrales Beauty Studio Piura",
+  "Francesa con efecto aurora en builder gel - Noemi Parrales Beauty Studio Piura"
 ];
 
 const images = Array.from({ length: 17 }, (_, i) => ({
   src: `/images/unas-naturales/unas-naturales-${String(i + 1).padStart(2, '0')}.jpg`,
-  label: labels[i] || "Manicura Natural",
-  alt: "Manicura en uñas naturales - Noemi Parrales Beauty Studio Piura"
+  label: labels[i] || "Semipermanente",
+  alt: alts[i]
 }));
 ---
 
 <ServiceLayout category={category} hideContact={true}>
   <section class="cat-gallery" slot="gallery">
     <div class="cat-gallery__container">
-      <h2>Galería de Uña Natural</h2>
+      <h2>Diseños en Uña Natural</h2>
       <div class="cat-gallery__grid">
         {images.map((img) => (
           <div class="cat-gallery__item">

@@ -90,7 +90,7 @@
       "name": "Con Extensión",
       "shortName": "Extensiones",
       "title": "Uñas con Extensión en Piura | Noemi Parrales Beauty Studio",
-      "description": "Extensiones de uñas en Piura: polygel, híbridas, builder gel, apres gel, acrigel. Resultados duraderos y personalizados.",
+      "description": "Extensiones de uñas en Piura: polygel, híbridas, builder gel, Apress Gel, acrigel. Resultados duraderos y personalizados.",
       "heroSubtitle": "El largo y diseño que deseas",
       "heroText": "Desde polygel hasta acrigel, trabajo cada extensión de forma individual para un resultado natural, cómodo y duradero.",
       "services": [
@@ -98,7 +98,7 @@
         { "name": "Híbridas (Polygel + Builder Gel)", "price": 80 },
         { "name": "Full Builder Gel", "price": 90 },
         { "name": "Builder Gel (Tip + Builder Gel)", "price": 60 },
-        { "name": "Apres Gel", "price": 60 },
+        { "name": "Apress Gel", "price": 60 },
         { "name": "Acrigel (Tip + gel + acrílico + curado en lámpara)", "price": 60 },
         { "name": "Retiro Acrílicas, Esculpidas y Gel", "price": 15 }
       ]
@@ -110,8 +110,8 @@
       "shortName": "Pedicura",
       "title": "Pedicura en Piura | Noemi Parrales Beauty Studio",
       "description": "Pedicura profesional en Piura: Masglo Gel Evolution, japonesa, semipermanente y builder gel. Higiene y cuidado con técnica rusa al seco.",
-      "heroSubtitle": "Pies perfectos, paso a paso",
-      "heroText": "Cuidado completo para tus pies con técnica rusa al seco, herramientas desechables e hidratación profunda.",
+      "heroSubtitle": "Pies Perfectos",
+      "heroText": "Cuidado completo para tus pies con técnica rusa, herramientas previamente esterilizadas, lima personal, exfoliación e hidratación profunda.",
       "services": [
         { "name": "Masglo Gel Evolution sin lámpara", "price": 40 },
         { "name": "Pedicura Japonesa", "price": 45 },
@@ -126,12 +126,12 @@
       "description": "Me enfoco en tus necesidades individuales para brindarte el mejor servicio y resultados excepcionales."
     },
     {
-      "title": "Técnica Rusa al Seco",
-      "description": "Limpieza precisa con herramientas desechables para máxima higiene y cuidado."
+      "title": "Manicura y Pedicura Rusa",
+      "description": "Limpieza precisa con herramientas esterilizadas para máxima higiene y cuidado."
     },
     {
       "title": "Productos Profesionales",
-      "description": "Trabajo con marcas de alta calidad para garantizar duración y acabado perfecto."
+      "description": "Trabajo con marcas de alta gama y buena calidad para una mejor pigmentación, duración y un acabado perfecto"
     }
   ]
 }
